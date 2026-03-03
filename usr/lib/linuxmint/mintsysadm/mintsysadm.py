@@ -28,7 +28,7 @@ class MyApplication(Gtk.Application):
         self.connect("activate", self.activate)
         self.connect("command-line", self.on_command_line)
         self.app_window = None
-        self.page = "boot"
+        self.page = "users"
 
     def on_command_line(self, app, command_line):
         # Parse fresh args each time
@@ -39,7 +39,7 @@ class MyApplication(Gtk.Application):
         argv = command_line.get_arguments()[1:]
         args, _ = parser.parse_known_args(argv)
         if args.page is None:
-            args.page = "boot"
+            args.page = "users"
         self.page = args.page
         self.activate(app)
         return 0

@@ -986,6 +986,7 @@
                     <property name="name">page_boot</property>
                     <property name="title" translatable="yes">Boot Menu</property>
                     <property name="icon-name">xsi-boot-menu-symbolic</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
@@ -1003,7 +1004,7 @@
                     <property name="name">page_users</property>
                     <property name="title" translatable="yes">Users</property>
                     <property name="icon-name">xsi-users</property>
-                    <property name="position">1</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
               </object>
