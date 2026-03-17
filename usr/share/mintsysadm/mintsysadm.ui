@@ -463,6 +463,23 @@
                 <property name="margin-top">12</property>
                 <property name="margin-bottom">12</property>
                 <child>
+                  <object class="GtkBox" id="page_users">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-start">20</property>
+                    <property name="margin-end">20</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="name">page_users</property>
+                    <property name="title" translatable="yes">Users</property>
+                    <property name="icon-name">xsi-users</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkBox" id="box_boot">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
@@ -676,7 +693,6 @@
                                                             <property name="halign">start</property>
                                                             <property name="text" translatable="yes">0</property>
                                                             <property name="adjustment">grub_timeout_adjustment</property>
-                                                            <property name="value">0</property>
                                                             </object>
                                                             <packing>
                                                             <property name="expand">False</property>
@@ -990,21 +1006,25 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox" id="page_users">
+                  <object class="GtkBox" id="firewall">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="margin-start">20</property>
-                    <property name="margin-end">20</property>
                     <property name="orientation">vertical</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
                     <child>
                       <placeholder/>
                     </child>
                   </object>
                   <packing>
-                    <property name="name">page_users</property>
-                    <property name="title" translatable="yes">Users</property>
-                    <property name="icon-name">xsi-users</property>
-                    <property name="position">0</property>
+                    <property name="name">Firewall</property>
+                    <property name="title" translatable="yes">Firewall</property>
+                    <property name="icon-name">security-medium-symbolic-rtl</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>

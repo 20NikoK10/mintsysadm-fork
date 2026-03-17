@@ -5,3 +5,4 @@ debian/*debhelper*
 debian/mintsysadm
 *.ui~
 usr/share/locale
+__pycache__
